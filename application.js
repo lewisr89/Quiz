@@ -57,7 +57,7 @@ $(document).ready(function () {
             console.log(userAnswer);
             console.log(questions[i].correct);
             console.log("CORRECT");
-            $("#result").html("Great Scott, That's correct! ").fadeIn(50).fadeOut(50).fadeIn(50);
+            $("#result").html("Great Scott, that's correct! ").fadeIn(50).fadeOut(50).fadeIn(50);
             userAnswers += 1;
             console.log(userAnswers);
             $("#answerContainer").html(questions[i].answerText).fadeIn(50).fadeOut(50).fadeIn(50);
