@@ -46,7 +46,7 @@ $(document).ready(function () {
     $("#4thChoice").append(questions[i].choices[3]);
    
 //Check My Guess button
-    $('body').on('click', 'input:submit', function () {
+    $('body').on('click', 'a#submit.btn.btn-primary.btn-lg', function () {
         var userAnswer = $("input[type='radio']:checked").val();
         
         if (userAnswer == undefined) {
@@ -61,13 +61,13 @@ $(document).ready(function () {
             userAnswers += 1;
             console.log(userAnswers);
             $("#answerContainer").html(questions[i].answerText).fadeIn(50).fadeOut(50).fadeIn(50);
-            $("input:submit").hide();
+            $("a#submit.btn.btn-primary.btn-lg").hide();
             $("#next").show();
             $("#answersCorrect").show();
             $("#answersCorrect").html("Answers Correct: " + userAnswers +" of 5")
                 if (i === 4) {
                 console.log("complete")
-                $("input:submit").hide();
+                $("a#submit.btn.btn-primary.btn-lg").hide();
                 $("#restart").show();
                 $("#next").hide();
                 
@@ -78,11 +78,11 @@ $(document).ready(function () {
             console.log("incorrect");
             $("#result").html("I'm afraid that's incorrect. ");
             $("#answerContainer").html(questions[i].answerText);
-            $("input:submit").hide();
+            $("a#submit.btn.btn-primary.btn-lg").hide();
             $("#next").show();
                 if (i === 4) {
                 console.log("complete")
-                $("input:submit").hide();
+                $("a#submit.btn.btn-primary.btn-lg").hide();
                 $("#restart").show();
                 $("#next").hide();
                 $
@@ -94,7 +94,7 @@ $(document).ready(function () {
 
 // Next question button
     $('body').on('click', '#next', function () {
-        $('input:submit').show();
+        $('a#submit.btn.btn-primary.btn-lg').show();
     	$("#next").hide();
         i = i + 1;
         console.log("question" + i)
@@ -125,8 +125,8 @@ $(document).ready(function () {
         $("#answerContainer").html("");
         $("#result").html("");
         $("input:radio").prop('checked', false);
-        $('input:submit').show();
-        $("#answersCorrect").html("")
+        $('a#submit.btn.btn-primary.btn-lg').show();
+        $("#answersCorrect").hide();
     });
 
 	$("#next").hide();
