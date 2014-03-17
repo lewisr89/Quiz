@@ -192,31 +192,28 @@ font-weight:600;
 margin-right: auto;
 margin-left:auto;    
 position: relative;
+margin-bottom: 5px;
 font-family: 'Signika', sans-serif;
+font-size:16px;
 font-weight:300;
 border-color: #c6c6c6;
- border-width: 1px;
-    background-color: #f7f7f7;
-    border-style: solid;
+border-width: 1px;
+background-color: #f7f7f7;
+border-style: solid;
     border-radius: 4px;
     margin-bottom: 10px;
     text-align: center;
     margin-top: 10px;
     white-space: normal;
-    width:120px;
-    height:20px;
     padding-right: 7px;
     padding-left: 7px;
     padding-top: 5px;
-    padding-bottom: 7px: 
+    padding-bottom: 5px: 
 
 }
 
-#submit:hover{
-	cursor: pointer;
-}
 
-.btn:hover{
+#submit:hover, #next:hover, #restart:hover{
 	box-shadow: 0px 0px 1px 0px #888888;
 	cursor: pointer;
 }

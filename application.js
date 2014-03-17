@@ -46,7 +46,7 @@ $(document).ready(function () {
     $("#4thChoice").append(questions[i].choices[3]);
    
 //Check My Guess button
-    $('body').on('click', '#submit', function () {
+ $('body').on('click', '#submit', function () {
         var userAnswer = $("input[type='radio']:checked").val();
         
         if (userAnswer == undefined) {
@@ -90,7 +90,6 @@ $(document).ready(function () {
             }
         
     });
-
 
 // Next question button
     $('body').on('click', '#next', function () {
