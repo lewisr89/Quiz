@@ -86,7 +86,7 @@ html {
 
 
 li{
-	font-family:'Jura', sans-serif;
+font-family: 'Signika', sans-serif;
 	 display: block;
 margin-right: auto;
 margin-left:auto;    
@@ -94,10 +94,11 @@ position: relative;
 width:400px;
 margin-bottom: 5px;
 text-align:center;
+font-weight:300;
 }
 
 #questioncontainer{
-	font-family:'Jura', sans-serif;
+font-family: 'Signika', sans-serif;
 	 display: block;
 margin-right: auto;
 margin-left:auto;    
@@ -107,6 +108,7 @@ margin-bottom: 5px;
 text-align: center;
 padding-bottom:10px;
 font-weight:600;
+line-height:20px;
 }
 
 #result, #submit, #answercontainer, #checkmyguess{
@@ -115,7 +117,8 @@ margin-right: auto;
 margin-left:auto;    
 position: relative;
 margin-bottom: 5px;
-font-family:'Jura', sans-serif;
+font-family: 'Signika', sans-serif;
+font-weight:300;
 }
 
 #next, #restart{
@@ -124,8 +127,9 @@ margin-right: auto;
 margin-left:auto;    
 position: relative;
 margin-bottom: 5px;
-font-family:'Jura', sans-serif;
+font-family: 'Signika', sans-serif;
 font-size:16px;
+font-weight:300;
 
 }
 
@@ -155,12 +159,13 @@ top:-893px;
 text-align: center;
 margin-left: auto;
 margin-right:auto;
-font-family:'Jura', sans-serif;
+font-family: 'Signika', sans-serif;
 font-size:16px;
 clear: both;
 padding-top: 12px;
 background-color: #eee;
 opacity: .8;
 border-radius: 10px;
+font-weight:600;
 
 }

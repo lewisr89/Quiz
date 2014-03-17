@@ -7,7 +7,7 @@ $(document).ready(function () {
         choices: ["1.21 Gigawatts",  "1.22 Gigawatts", "21 Gigawatts", "1.21 Terawatts" ,"1 Gigawatt"],
         questionValue: 0,
         correct: 0,
-        answerText: "The answer is 1.21 Gigawatts. Doc states that the time machine is electrical but that he needs a nuclear reaction (produced by plutonium stolen from a group of Libyan terrorists) to generate the 1.21  &quot;jigawatts &quot; of electricity needed."
+        answerText: "The answer is 1.21 Gigawatts. Doc states that the time machine is electrical but that he needs a nuclear reaction (produced by plutonium stolen from a group of Libyan terrorists) to generate the 1.21  &quot;jigawatts&quot; of electricity needed."
     }, {
         question: "Before his performance of &quot;Johnny B. Goode&quot; at the Enchantment Under The Sea Dance, what song does Marty help the band play?",
         choices: [ "Beyond The Sea", "Mona Lisa","Papa Loves Mambo","Earth Angel"],
