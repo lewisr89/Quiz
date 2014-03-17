@@ -19,7 +19,7 @@ $(document).ready(function () {
         choices: ["Jimmy Carter", "George Bush", "Ronald Reagan", "Bill Clinton"],
         questionValue: 2,
         correct: 2,
-        answerText: "The answer is Ronald Regan. When Reagan first watched Back to the Future at the movie theater in the White House, he reportedly was so amused that Emmett Brown could not believe an actor like him could become president, he had the projectionist stop and rewind the film to replay the scene. He later referred to the movie in his 1986 State of the Union address when he said, &quot;Never has there been a more exciting time to be alive, a time of rousing wonder and heroic achievement. As they said in the film Back to the Future, &quot;Where we're going, we don't need roads!&quot;&quot;"
+        answerText: "The answer is Ronald Regan. When Reagan first watched Back to the Future at the movie theater in the White House, he reportedly was so amused that Emmett Brown could not believe an actor like him could become president, he had the projectionist stop and rewind the film to replay the scene. He later referred to the movie in his 1986 State of the Union address when he said, &quot;Never has there been a more exciting time to be alive, a time of rousing wonder and heroic achievement. As they said in the film Back to the Future, &#39;Where we're going, we don't need roads!&#39;&quot;"
     }, {
         question: "When dressed as the alien Darth Vader, what band's music does Marty use to wake up George?",
         choices: ["Van Halen", "AC/DC", "Black Sabbath", "Metallica"],
@@ -31,7 +31,7 @@ $(document).ready(function () {
         choices: [ "Undeclared", "Freaks and Geeks", "The Torkelsons","Degrassi"],
         questionValue: 4,
         correct: 1,
-        answerText: "The answer is Freaks and Geeks. Thomas F Wilson, most famously known for playing Biff Tannen, also played McKinley High School's Coach Ben Fredricks in Freaks and Geeks."
+        answerText: "The answer is Freaks and Geeks. Thomas F. Wilson, most famously known for playing Biff Tannen, also played McKinley High School's Coach Ben Fredricks in Freaks and Geeks."
     }];
 //Global Variables
     var userAnswers = 0;
