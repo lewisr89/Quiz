@@ -126,6 +126,7 @@ $(document).ready(function () {
         $("input:radio").prop('checked', false);
         $('#submit').show();
         $("#answersCorrect").hide();
+        userAnswers=0;
     });
 
 	$("#next").hide();
