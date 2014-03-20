@@ -85,18 +85,28 @@ html {
 
 
 
+#answerlist{
+	text-align: center;
+}
+
+ul{
+	display:inline-block;
+}
 li{
 font-family: 'Signika', sans-serif;
-	 display: block;
-margin-right: auto;
-margin-left:auto;    
+	 display: block;   
 position: relative;
-width:400px;
 margin-bottom: 5px;
-text-align:center;
+text-align:left;
 font-weight:300;
 }
 
+li input{
+	width:12px;
+}
+li span {
+	width:375px;
+}
 #questioncontainer{
 font-family: 'Signika', sans-serif;
 	 display: block;
