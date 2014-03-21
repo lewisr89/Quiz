@@ -46,6 +46,8 @@ $(document).ready(function () {
     $("#4thChoice").append(questions[i].choices[3]);
    
 //Check My Guess button
+
+
  $('body').on('click', '#submit', function () {
         var userAnswer = $("input[type='radio']:checked").val();
         
@@ -90,13 +92,7 @@ $(document).ready(function () {
             }
         
     });
-
-// Next question button
-    $('body').on('click', '#next', function () {
-        $('#submit').show();
-    	$("#next").hide();
-        i = i + 1;
-        console.log("question" + i)
+var clearQuestion = function (){
         $("#questionContainer").html(questions[i].question);
         $("#1stChoice").html(questions[i].choices[0]);
         $("#2ndChoice").html(questions[i].choices[1]);
@@ -105,6 +101,15 @@ $(document).ready(function () {
         $("#answerContainer").html("");
         $("#result").html("");
         $("input:radio").prop('checked', false);
+};
+
+// Next question button
+    $('body').on('click', '#next', function () {
+        $('#submit').show();
+    	$("#next").hide();
+        i = i + 1;
+        console.log("question" + i)
+        return clearQuestion();
     });
 
 
@@ -116,17 +121,11 @@ $(document).ready(function () {
         $(this).hide();
         $("#next").hide();
         i = 0;
-        $("#questionContainer").html(questions[i].question);
-        $("#1stChoice").html(questions[i].choices[0]);
-        $("#2ndChoice").html(questions[i].choices[1]);
-        $("#3rdChoice").html(questions[i].choices[2]);
-        $("#4thChoice").html(questions[i].choices[3]);
-        $("#answerContainer").html("");
-        $("#result").html("");
-        $("input:radio").prop('checked', false);
         $('#submit').show();
         $("#answersCorrect").hide();
         numberOfQuestionsAnswered=0;
+        return clearQuestion();
+        
     });
 
 	$("#next").hide();
