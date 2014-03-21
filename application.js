@@ -34,7 +34,7 @@ $(document).ready(function () {
         answerText: "The answer is Freaks and Geeks. Thomas F. Wilson, most famously known for playing Biff Tannen, also played McKinley High School's Coach Ben Fredricks in Freaks and Geeks."
     }];
 //Global Variables
-    var userAnswers = 0;
+    var numberOfQuestionsAnswered = 0;
     var userAnswer = "";
     var i = 0
     console.log("question" + i)
@@ -58,13 +58,13 @@ $(document).ready(function () {
             console.log(questions[i].correct);
             console.log("CORRECT");
             $("#result").html("Great Scott, that's correct! ").fadeIn(50).fadeOut(50).fadeIn(50);
-            userAnswers += 1;
-            console.log(userAnswers);
+            numberOfQuestionsAnswered += 1;
+            console.log(numberOfQuestionsAnswered);
             $("#answerContainer").html(questions[i].answerText).fadeIn(50).fadeOut(50).fadeIn(50);
             $("#submit").hide();
             $("#next").show();
             $("#answersCorrect").show();
-            $("#answersCorrect").html("Answers Correct: " + userAnswers +" of 5")
+            $("#answersCorrect").html("Answers Correct: " + numberOfQuestionsAnswered + " of 5")
                 if (i === 4) {
                 console.log("complete")
                 $("#submit").hide();
@@ -126,7 +126,7 @@ $(document).ready(function () {
         $("input:radio").prop('checked', false);
         $('#submit').show();
         $("#answersCorrect").hide();
-        userAnswers=0;
+        numberOfQuestionsAnswered=0;
     });
 
 	$("#next").hide();
